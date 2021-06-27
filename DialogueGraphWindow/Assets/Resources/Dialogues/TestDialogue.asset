@@ -1,0 +1,108 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -269679281, guid: 173be07babe13ac448f27ab30bb6a653, type: 3}
+  m_Name: TestDialogue
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: 5e3678f5-d89d-4f65-94bd-f0db9d8a0970
+    PortGuid: 
+    TargetNodeGuid: c65912c8-6b3a-4c4a-87c3-e58009a1185c
+  - BaseNodeGuid: c65912c8-6b3a-4c4a-87c3-e58009a1185c
+    PortGuid: d780a508-fff3-442f-9a38-0cd15d82bc32
+    TargetNodeGuid: a82a07c4-935a-4430-bfee-7c34a463b106
+  - BaseNodeGuid: c65912c8-6b3a-4c4a-87c3-e58009a1185c
+    PortGuid: 4a41d08b-6950-4ff3-9fcd-12f280beb7f6
+    TargetNodeGuid: 305f38d0-8a99-4eac-8245-35f1149b994f
+  - BaseNodeGuid: a82a07c4-935a-4430-bfee-7c34a463b106
+    PortGuid: 2a30bd11-bb19-4470-af84-c9f170f014a4
+    TargetNodeGuid: 0914d97d-1845-4a0f-bd49-cf40ba61cfb2
+  - BaseNodeGuid: 305f38d0-8a99-4eac-8245-35f1149b994f
+    PortGuid: cc9ecc43-b066-4c99-bacc-24b818503b4c
+    TargetNodeGuid: 0914d97d-1845-4a0f-bd49-cf40ba61cfb2
+  - BaseNodeGuid: 305f38d0-8a99-4eac-8245-35f1149b994f
+    PortGuid: b3f44395-5162-4e70-98ad-e628846f0ef7
+    TargetNodeGuid: 4653e6c0-42e8-4c48-9e55-9e358ef6b94f
+  - BaseNodeGuid: 4653e6c0-42e8-4c48-9e55-9e358ef6b94f
+    PortGuid: 9b2b5589-d7cc-4a32-809d-68d346420fa0
+    TargetNodeGuid: 0914d97d-1845-4a0f-bd49-cf40ba61cfb2
+  Nodes:
+  - GUID: c65912c8-6b3a-4c4a-87c3-e58009a1185c
+    DialogueText: Hello. Is it your first conversation with me?
+    Position: {x: 287, y: 164}
+    Ports:
+    - Guid: d780a508-fff3-442f-9a38-0cd15d82bc32
+      NodeGuid: c65912c8-6b3a-4c4a-87c3-e58009a1185c
+      ChoiseText: Yes
+      ChoiseCondition:
+        ChoiseGuid: d780a508-fff3-442f-9a38-0cd15d82bc32
+        ConditionName: test
+        ConditionValue: 0
+    - Guid: 4a41d08b-6950-4ff3-9fcd-12f280beb7f6
+      NodeGuid: c65912c8-6b3a-4c4a-87c3-e58009a1185c
+      ChoiseText: No
+      ChoiseCondition:
+        ChoiseGuid: 4a41d08b-6950-4ff3-9fcd-12f280beb7f6
+        ConditionName: test
+        ConditionValue: 5
+    Properties: []
+  - GUID: 305f38d0-8a99-4eac-8245-35f1149b994f
+    DialogueText: I know.
+    Position: {x: 701, y: 250}
+    Ports:
+    - Guid: cc9ecc43-b066-4c99-bacc-24b818503b4c
+      NodeGuid: 305f38d0-8a99-4eac-8245-35f1149b994f
+      ChoiseText: Okay...
+      ChoiseCondition:
+        ChoiseGuid: cc9ecc43-b066-4c99-bacc-24b818503b4c
+        ConditionName: 
+        ConditionValue: 
+    - Guid: b3f44395-5162-4e70-98ad-e628846f0ef7
+      NodeGuid: 305f38d0-8a99-4eac-8245-35f1149b994f
+      ChoiseText: But how?
+      ChoiseCondition:
+        ChoiseGuid: b3f44395-5162-4e70-98ad-e628846f0ef7
+        ConditionName: 
+        ConditionValue: 
+    Properties: []
+  - GUID: 0914d97d-1845-4a0f-bd49-cf40ba61cfb2
+    DialogueText: End
+    Position: {x: 1554, y: 102}
+    Ports: []
+    Properties: []
+  - GUID: a82a07c4-935a-4430-bfee-7c34a463b106
+    DialogueText: You won't be able to answer the same next time
+    Position: {x: 701, y: 64}
+    Ports:
+    - Guid: 2a30bd11-bb19-4470-af84-c9f170f014a4
+      NodeGuid: a82a07c4-935a-4430-bfee-7c34a463b106
+      ChoiseText: Okay...
+      ChoiseCondition:
+        ChoiseGuid: 2a30bd11-bb19-4470-af84-c9f170f014a4
+        ConditionName: 
+        ConditionValue: 
+    Properties:
+    - PropertyName: test
+      PropertyValue: 5
+  - GUID: 4653e6c0-42e8-4c48-9e55-9e358ef6b94f
+    DialogueText: The value is written to the register class, and when iterating
+      over the answer options, it is checked. If it matches the value specified in
+      the answer option, it is displayed.
+    Position: {x: 1200, y: 311}
+    Ports:
+    - Guid: 9b2b5589-d7cc-4a32-809d-68d346420fa0
+      NodeGuid: 4653e6c0-42e8-4c48-9e55-9e358ef6b94f
+      ChoiseText: Understood.
+      ChoiseCondition:
+        ChoiseGuid: 9b2b5589-d7cc-4a32-809d-68d346420fa0
+        ConditionName: 
+        ConditionValue: 
+    Properties: []

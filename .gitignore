@@ -2,13 +2,16 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
 #
-/[Ll]ibrary/
-/[Tt]emp/
-/[Oo]bj/
-/[Bb]uild/
-/[Bb]uilds/
-/[Ll]ogs/
-/[Mm]emoryCaptures/
+DialogueGraphWindow/[Ll]ibrary/
+DialogueGraphWindow/[Tt]emp/
+DialogueGraphWindow/[Oo]bj/
+DialogueGraphWindow/[Bb]uild/
+DialogueGraphWindow/[Bb]uilds/
+DialogueGraphWindow/[Ll]ogs/
+DialogueGraphWindow/[Mm]emoryCaptures/
+
+DialogueContainer/DialogueSystemContainer/bin/
+DialogueContainer/DialogueSystemContainer/obj/
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta
